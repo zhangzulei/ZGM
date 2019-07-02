@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmQuestionMapper">
+    <!--查询当前节点下的题目信息-->
+    <select id="selectAllByNode" parameterType="int" resultType="net.zgm.model.ZgmGateway">
+       select * from zgm_question where gateway_id=#{value }
+    </select>
+    <!--未生成过题目 随机产生10道题目-->
+    <select id="selectZgmQuestionByGid" resultType="net.zgm.model.ZgmQuestion" parameterType="int">
+		 SELECT * FROM zgm_question  where gateway_id=#{gateway_id}  ORDER BY RAND() LIMIT 10;
+	</select>
+    <!--已生成过题目根据题目code 查询题目-->
+    <select id="selectZgmQuestionByCode" resultType="net.zgm.model.ZgmQuestion" parameterType="list">
+        SELECT * FROM zgm_question where code in
+        <foreach item="item" index="index" collection="list" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+</mapper>

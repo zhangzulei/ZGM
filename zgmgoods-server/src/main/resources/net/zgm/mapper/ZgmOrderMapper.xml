@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmOrderMapper">
+    <insert id="addZgmOrder">
+		insert  into zgm_order(user_id,user_name,receive_name,receive_area,receive_address,telephone,goods_id,trans_status,order_no,create_time)
+		values (#{userId},#{userName},#{receiveName},#{receiveArea},#{receiveAddress},#{telephone},#{goodsId},0,#{orderNo},now())
+	</insert>
+    <update id="receivingZgmOrder">
+ update zgm_order set receiving_time =now(), trans_status=2 where order_id=#{orderId}
+    </update>
+    <select id="selectZgmOrderByUid" resultType="net.zgm.model.ZgmOrder">
+select *from zgm_order where  user_id=#{userId}
+    </select>
+</mapper>

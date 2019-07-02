@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmVideoMapper">
+    <update id="updateVideoclickzanNum">
+        update zgm_video set clickzan_num=(clickzan_num + ${clicknum}) where video_id=#{videoId}
+    </update>
+    <select id="selectZgmVideoByGId" resultType="net.zgm.model.ZgmVideo">
+
+    select * from zgm_video  where gateway_id=#{gatewayId}
+
+</select>
+    <select id="selectZgmVideoByVid" resultType="net.zgm.model.ZgmVideo">
+        select * from zgm_video where video_id=#{videoId}
+    </select>
+
+</mapper>
+
+

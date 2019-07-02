@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmAddressMapper">
+    <update id="updateZgmAddress">
+     update zgm_address set receive_name=#{receiveName},receive_area=#{receiveArea},receive_address=#{receiveAddress} ,default_address=#{defaultAddress}, create_time=now(),telephone=#{telephone}  where address_id=#{addressId}
+    </update>
+    <update id="updatedefaultAddress">
+        update zgm_address set  default_address=0 where  address_id=#{addressId}
+    </update>
+    <delete id="deleteZgmAddress">
+        delete from zgm_address where address_id=#{addressId}
+    </delete>
+    <select id="selectZgmAddressByUid" resultType="net.zgm.model.ZgmAddress">
+	select * from zgm_address where user_id=#{userId}
+    </select>
+    <select id="selectdefaultAddress" resultType="net.zgm.model.ZgmAddress">
+        select * from zgm_address where user_id=#{userId}  and  default_address=1
+    </select>
+    <insert id="addZgmAddress">
+        insert  into zgm_address(user_id,receive_name,receive_area,receive_address,telephone,default_address,create_time)   values(#{userId},#{receiveName},#{receiveArea},#{receiveAddress},#{telephone},#{defaultAddress},now())
+    </insert>
+</mapper>

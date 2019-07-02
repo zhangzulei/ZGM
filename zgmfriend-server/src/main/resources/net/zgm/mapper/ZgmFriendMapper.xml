@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmFriendMapper">
+	<!--查询出我的好友-->
+    <select id="selectAllFriend" resultType="net.zgm.model.ZgmFriend" parameterType="int">
+		select * from zgm_friend where userid in(
+		select atteUserid from zgm_friend WHERE userid = #{userid}
+)	 and atteUserid =#{atteUserid}
+	</select>
+	<!--查询是否是好友-->
+	<select id="selectIsFried" resultType="net.zgm.model.ZgmFriend" parameterType="int">
+		select * from zgm_friend where userid =#{userid} and atteUserid =#{atteUserid}
+	</select>
+
+</mapper>

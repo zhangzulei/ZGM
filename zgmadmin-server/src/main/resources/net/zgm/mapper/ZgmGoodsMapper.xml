@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmGoodsMapper">
+    <select id="queryAllZmgGoods" resultType="net.zgm.model.ZgmGoods">
+        select *from zgm_goods
+        <where>
+            <if test="goodsclassifyId != null and goodsclassifyId!=''">
+                goodsclassify_id= #{goodsclassifyId}
+            </if>
+        </where>
+    </select>
+    <select id="selectZgmGoodsByGid" resultType="net.zgm.model.ZgmGoods">
+        select * from zgm_goods where  goods_id=#{goodsId}
+    </select>
+    <update id="convertGoods">
+		update zgm_goods set goods_repertory=(goods_repertory-1) where goods_id=#{goodsId}
+	</update>
+</mapper>

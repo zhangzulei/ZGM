@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.zgm.mapper.GuildLeavMessMapper">
+    <insert id="insertLeavMess" parameterType="net.zgm.model.ZgmGuildLeavmess">
+        INSERT INTO `zgm_guild_leavmess`
+                    (`guild_id`,
+                     `user_id`,
+                     `isdelete`,
+                     `date`,
+                     `content`)
+        VALUES (#{guildId},
+                #{userId},
+                #{isdelete},
+                #{date},
+                #{content})
+    </insert>
+
+    <update id="deleteleavMess" parameterType="integer">
+        UPDATE `zgm_guild_leavmess`
+        SET `isdelete` = '1',
+        WHERE `id` = #{id}
+    </update>
+
+    <select id="findByGuildId" resultType="net.zgm.model.ZgmGuildLeavmess" parameterType="string">
+        SELECT
+          `id`,
+          `guild_id`,
+          `user_id`,
+          `isdelete`,
+          `date`,
+          `content`
+        FROM `zgm_guild_leavmess` WHERE guild_id = #{guildId}
+    </select>
+
+    <select id="findById" resultType="net.zgm.model.ZgmGuildLeavmess" parameterType="integer">
+        SELECT
+          `id`,
+          `guild_id`,
+          `user_id`,
+          `isdelete`,
+          `date`,
+          `content`
+        FROM `zgm_guild_leavmess` WHERE user_id = #{id}
+    </select>
+</mapper>

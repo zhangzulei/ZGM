@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmCollarTaskMapper">
+
+    <!--查询最热的任务-->
+    <select id="selectFindHotTask" resultType="net.zgm.model.ZgmCollarTask">
+      select taskcid,count(*) as count1 from zgm_collartask  where collarTaskcState!='1' group by taskcid  order by count1 desc limit 10;
+    </select>
+    <!--//查询最新领取任务 where adminid=#{} 参数是用户id 返回任务实体类-->
+    <select id="selectNewCollarTask" resultType="net.zgm.model.ZgmCollarTask" parameterType="int">
+        select t.taskcName as taskcName,t.taskcDetails as taskcDetails,t.taskcCreator as taskcCreator,t.taskcCreateTime
+        as taskcCreateTime,t.taskcEndTime as taskcEndTime , c.collarTaskid as collarTaskid, c.taskcid as taskcid ,
+        c.collarTaskcMode as collarTaskcMode ,c.collarTaskcState as collarTaskcState from zgm_collartask c inner join
+        zgm_taskc t
+        on c.taskcid = t.taskcid
+        <where>
+            <if test="userid != null and userid != '0'">
+                userid=#{userid}
+            </if>
+        </where>
+        GROUP BY c.collarTaskcCreateTime desc limit 0,1
+    </select>
+    <!--查询当前用户 所有已领取任务-->
+    <select id="selectAllCollarTask" resultType="net.zgm.model.ZgmCollarTask" parameterType="int">
+      select c.*,t.taskcName ,t.taskcSumStep from zgm_collartask c  inner join zgm_taskc t
+        on c.taskcid = t.taskcid
+        where c.userid=#{userid }
+    </select>
+    <!--查询当前用户 所有任务 任务必须是未完成 未过期的-->
+    <select id="selectStateCollarTask" resultType="net.zgm.model.ZgmCollarTask" parameterType="int">
+      select c.*,t.taskcName ,t.taskcSumStep from zgm_collartask c  inner join zgm_taskc t
+        on c.taskcid = t.taskcid
+        where c.userid=#{userid } and c.collarTaskcState != '0' and c.collarTaskcState != '2'
+    </select>
+    <!--&lt;!&ndash;更新热门任务&ndash;&gt;-->
+    <!--<update id="updateCollarTaskHot" parameterType="list">-->
+    <!--update zgm_collartask set collarTaskcHot='1' where taskcid in-->
+    <!--<foreach separator="," index="index" item="item" collection="list" close=")" open="(">-->
+    <!--#{item.taskcid}-->
+    <!--</foreach>-->
+    <!--</update>-->
+    <!--//引导页新增任务-->
+    <insert id="insertCollarTaskc" parameterType="net.zgm.model.ZgmCollarTask">
+        insert into zgm_collartask
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="taskcid != null">
+                taskcid,
+            </if>
+            <if test="userid != null">
+                userid,
+            </if>
+            <!--<if test="relaid != null">-->
+                <!--relaid,-->
+            <!--</if>-->
+            <if test="collarTaskcStep != null">
+                collarTaskcStep,
+            </if>
+            <if test="collarTaskcCreateTime != null">
+                collarTaskcCreateTime,
+            </if>
+            <!---->
+            <!--<if test="collarTaskcEndTime != null">-->
+                <!--collarTaskcEndTime,-->
+            <!--</if>-->
+            <if test="collarTaskcMode != null">
+                collarTaskcMode,
+            </if>
+            <if test="collarTaskcType != null">
+                collarTaskcType,
+            </if>
+            <if test="collarTaskcState != null">
+                collarTaskcState,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="taskcid != null">
+                #{taskcid},
+            </if>
+            <if test="userid != null">
+                #{userid},
+            </if>
+            <!--<if test="relaid != null">-->
+                <!--#{relaid},-->
+            <!--</if>-->
+            <if test="collarTaskcStep != null">
+                #{collarTaskcStep},
+            </if>
+            <if test="collarTaskcCreateTime != null">
+                #{collarTaskcCreateTime},
+            </if>
+            <!--<if test="collarTaskcEndTime != null">-->
+                <!--#{collarTaskcEndTime},-->
+            <!--</if>-->
+            <if test="collarTaskcMode != null">
+                #{collarTaskcMode},
+            </if>
+            <if test="collarTaskcType != null">
+                #{collarTaskcType},
+            </if>
+            <if test="collarTaskcState != null">
+                #{collarTaskcState},
+            </if>
+
+        </trim>
+    </insert>
+    <!--//免费领取修改为付费-->
+    <update id="updateCollarTaskcMode" parameterType="net.zgm.model.ZgmCollarTask">
+        update zgm_collartask
+        <set>
+            <if test="collarTaskcMode != null and collarTaskcMode != '1' ">
+                collarTaskcMode= #{collarTaskcMode}
+            </if>
+        </set>
+        where collarTaskid = #{collarTaskid,jdbcType=INTEGER}
+    </update>
+    <!--//更新已领取任务的步数-->
+    <update id="updateCollarTaskcStep" parameterType="int">
+        update zgm_collartask
+        <set>
+            <if test="step != null ">
+                collarTaskcStep= collarTaskcStep + #{step }
+            </if>
+        </set>
+        where userid = #{userid} and collarTaskcState!='0' and collarTaskcState!='2'
+    </update>
+    <!--更改当前用户 当前任务的状态 从未完成 改成已完成 其他不可更改-->
+    <update id="updateCollarTaskcState" parameterType="net.zgm.model.ZgmCollarTask">
+        update zgm_collartask
+        <set>
+            <if test="collarTaskcState != null ">
+                collarTaskcState= #{collarTaskcState}
+            </if>
+        </set>
+        where userid = #{userid} and collarTaskid=#{collarTaskid} and collarTaskcState!='0' and collarTaskcState!='2'
+    </update>
+
+    <!--查询当前用户 当前任务 任务必须是未完成 未过期的 已完成的步数-->
+    <select id="selectCollarTaskcStep" parameterType="net.zgm.model.ZgmCollarTask" resultType="int">
+        select collarTaskcStep   from zgm_collartask  and userid = #{userid} and collarTaskid=#{collarTaskid} and collarTaskcState!='0' and collarTaskcState!='2'
+    </select>
+    <!--查询当前用户所有未完成已结束的任务-->
+    <select id="selectCollarTaskcEnd" parameterType="int" resultType="net.zgm.model.ZgmCollarTask">
+        select c.*,t.taskcSumStep as taskcSumStep from zgm_collartask c,zgm_taskc t where c.taskcid=t.taskcid and c.userid = #{userid} and c.collarTaskcState='0'
+    </select>
+    <!--更新所有已领取任务状态 已过期-->
+    <update id="updateCollarTaskEnd" parameterType="list">
+        update zgm_collartask set collarTaskcState='0' where taskcid in
+        <foreach separator="," index="index" item="item" collection="list" close=")" open="(">
+            #{item.taskcid}
+        </foreach>
+        and collarTaskcState!='2'
+    </update>
+
+    <!--查询当前用户所有已完成任务-->
+    <select id="selectCollarTaskcWan" parameterType="int" resultType="net.zgm.model.ZgmCollarTask">
+        select c.*,t.taskcSumStep as taskcSumStep from zgm_collartask c,zgm_taskc t where c.taskcid=t.taskcid and  c.userid = #{userid} and c.collarTaskcState='2'
+    </select>
+    <!--查询当前已领任务详情-->
+    <select id="selectCollarTaskcBycid" parameterType="int" resultType="net.zgm.model.ZgmCollarTask">
+        select t.taskcName as taskcName,t.taskcDetails as taskcDetails,t.taskcCreator as taskcCreator,t.taskcCreateTime
+        as taskcCreateTime,t.taskcEndTime as taskcEndTime , c.collarTaskid as collarTaskid, c.taskcid as taskcid ,
+        c.collarTaskcMode as collarTaskcMode ,c.collarTaskcState as collarTaskcState from zgm_collartask c,zgm_taskc t where c.taskcid=t.taskcid and  c.userid = #{userid} and c.collarTaskid=#{collarTaskid}
+    </select>
+    <!--查询当前任务已领取ID-->
+    <select id="selectCollarTaskcCid" parameterType="net.zgm.model.ZgmCollarTask" resultType="int">
+        select collarTaskid from zgm_collartask where userid=#{userid} and taskcid = #{taskcid}
+    </select>
+
+</mapper>

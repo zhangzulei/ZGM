@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.zgm.mapper.GuildMapper">
+    <insert id="insertGuild" parameterType="net.zgm.model.ZgmGuild">
+
+        INSERT INTO `zgm_guild`
+            (
+            id,
+             `guild_name`,
+             `guild_state`,
+             `create_date`,
+             `delete_date`,
+             `update_date`,
+             `guild_provinces`,
+             `guild_cities`,
+             `guild_areas`,
+             `guild_address`,
+             `guild_max_peo`,
+             `guild_curr_peo`,
+             `create_userid`)
+        VALUES (
+        #{id},
+                #{guildName},
+                #{guildState},
+                #{createDate},
+                #{deleteDate},
+                #{updateDate},
+                #{guildProvinces},
+                #{guildCities},
+                #{guildAreas},
+                #{guildAddress},
+                #{guildMaxPeo},
+                #{guildCurrPeo},
+                #{createUserid});
+    </insert>
+
+    <update id="updateGuild" parameterType="net.zgm.model.ZgmGuild">
+        UPDATE `zgm_guild`
+        SET `guild_name` = #{guildName},
+            `guild_state` = #{guildState},
+            `create_date` = #{createDate},
+            `delete_date` = #{deleteDate},
+            `update_date` = #{updateDate},
+            `guild_provinces` = #{guildProvinces},
+            `guild_cities` = #{guildCities},
+            `guild_areas` = #{guildAreas},
+            `guild_address` = #{guildAddress},
+            `guild_max_peo` = #{guildMaxPeo},
+            `guild_curr_peo` = #{guildCurrPeo},
+            `create_userid` = #{createUserid},
+        WHERE `id` = #{id}
+    </update>
+
+    <update id="updateGuildState">
+        UPDATE `zgm_guild`
+        SET
+        `guild_state` = #{state},
+        `update_date` = #{updateDate},
+        WHERE `id` = #{id}
+    </update>
+
+    <select id="findAllByState" resultType="net.zgm.model.ZgmGuild" parameterType="integer">
+      SELECT
+          `id`,
+          `guild_name`,
+          `guild_state`,
+          `create_date`,
+          `delete_date`,
+          `update_date`,
+          `guild_provinces`,
+          `guild_cities`,
+          `guild_areas`,
+          `guild_address`,
+          `guild_max_peo`,
+          `guild_curr_peo`,
+          `create_userid`
+        FROM `zgm_guild`
+        WHERE guild_state = #{state}
+    </select>
+
+    <select id="findById" resultType="net.zgm.model.ZgmGuild" parameterType="string">
+        SELECT
+          `id`,
+          `guild_name`,
+          `guild_state`,
+          `create_date`,
+          `delete_date`,
+          `update_date`,
+          `guild_provinces`,
+          `guild_cities`,
+          `guild_areas`,
+          `guild_address`,
+          `guild_max_peo`,
+          `guild_curr_peo`,
+          `create_userid`
+        FROM `zgm_guild`
+        WHERE id = #{guildId}
+    </select>
+
+
+    <select id="findByLike" resultType="net.zgm.model.ZgmGuild">
+        SELECT
+          `id`,
+          `guild_name`,
+          `guild_state`,
+          `create_date`,
+          `delete_date`,
+          `update_date`,
+          `guild_provinces`,
+          `guild_cities`,
+          `guild_areas`,
+          `guild_address`,
+          `guild_max_peo`,
+          `guild_curr_peo`,
+          `create_userid`
+        FROM `zgm_guild`
+        WHERE guild_areas = #{areaId} and guild_name like CONCAT('%',#{guildName},'%') and (guild_state = 0 OR guild_state = 4)
+    </select>
+</mapper>

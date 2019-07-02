@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmAdminMapper">
+
+    <select id="selectZgmAdminByUid" resultType="net.zgm.model.ZgmAdmin">
+        		SELECT * FROM zgm_admin WHERE user_id=#{userId}
+    </select>
+
+    <update id="updateStepTime" parameterType="int">
+      update zgm_admin set stepTime= DATE_FORMAT(NOW(),'%Y-%m-%d %H:%m:%s')where user_id=#{value }
+    </update>
+
+    <update id="updateLoginStatus" parameterType="int">
+      update zgm_admin set loginStatus= 1 where user_id=#{value } and loginStatus=0
+    </update>
+    <select id="selectLoginStatus" resultType="net.zgm.model.ZgmAdmin" parameterType="int">
+        		SELECT * FROM zgm_admin WHERE user_id=#{userId}
+    </select>
+
+</mapper>

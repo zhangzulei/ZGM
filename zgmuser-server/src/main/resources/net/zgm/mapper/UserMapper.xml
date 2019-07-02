@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.UserMapper">
+
+    <select id="findRelaByUserId" resultType="net.zgm.model.ZgmUser" parameterType="integer">
+        SELECT
+          `id`,
+          `user_id`,
+          `user_name`,
+          `user_sex`,
+          `user_age`,
+          `user_school`,
+          `user_grade`,
+          `user_class`,
+          `user_provinces`,
+          `user_cities`,
+          `user_areas`,
+          `user_address`,
+          `isdelete`,
+          `create_date`,
+          `isstudent`
+        FROM `zgm_userrela` WHERE user_id = #{userId};
+    </select>
+
+    <insert id="insertUser" parameterType="net.zgm.model.ZgmUser">
+        INSERT INTO `zgm_userrela`
+            (`user_id`,
+             `user_name`,
+             `user_sex`,
+             `user_age`,
+             `user_school`,
+             `user_grade`,
+             `user_class`,
+             `user_provinces`,
+             `user_cities`,
+             `user_areas`,
+             `user_address`,
+             `isdelete`,
+             `create_date`,
+             `isstudent`,
+             `user_subject`)
+            VALUES (
+                  #{userId},
+                  #{userName},
+                  #{userSex},
+                  #{userAge},
+                  #{userSchool},
+                  #{userGrade},
+                  #{userClass},
+                  #{userProvinces},
+                  #{userCities},
+                  #{userAreas},
+                  #{userAddress},
+                  #{isdelete},
+                  #{createDate},
+                  #{isStudent},
+                  #{userSubject}
+                  )
+    </insert>
+    
+    <select id="findIsAbout" resultType="int">
+        SELECT COUNT(1) FROM `zgm_write_agreement` WHERE user_id = #{userId};
+    </select>
+    
+    <insert id="createAbout" parameterType="integer">
+        INSERT INTO `zgm_write_agreement`
+            (
+             `user_id`,
+             `is_about`,
+             `createdate`)
+VALUES (
+        #{userId},
+        '1',
+        NOW());
+    </insert>
+    
+    <insert id="createWrite">
+        INSERT INTO
+        `sysuser`(username,userPwd,roleName,deptName)
+        VALUE(#{phone},#{pwd},'写手','写手')
+    </insert>
+
+    <select id="findAdminById" parameterType="integer" resultType="net.zgm.model.ZgmAdmin">
+        SELECT
+          `user_id`,
+          `telephone`
+        FROM `zgm_admin`
+        WHERE user_id = #{userId}
+    </select>
+
+</mapper>

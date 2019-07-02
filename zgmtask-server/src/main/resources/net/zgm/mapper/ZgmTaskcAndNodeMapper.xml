@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmTaskcAndNodeMapper">
+    <!--查询当前任务下所有节点需要的步数-->
+    <select id="selectZgmGatewayByStep" parameterType="int" resultType="net.zgm.model.TaskAndNode">
+         select gatewayStep,gateway_id from zgm_taskandnode where taskcid =#{value }
+    </select>
+    <!--步数更新后更新节点步数状态-->
+    <update id="updateGatewayStepState" parameterType="net.zgm.model.TaskAndNode">
+        update zgm_taskandnode
+        <set>
+            <if test="isGatewayStep != null">
+                isGatewayStep = #{isGatewayStep}
+            </if>
+        </set>
+        where taskcid=#{taskcid} and gateway_id=#{gateway_id}
+    </update>
+    <!--生成题目时更新题目状态为已生成-->
+    <update id="updateGatewayQuestionState" parameterType="net.zgm.model.TaskAndNode">
+        update zgm_taskandnode
+        <set>
+            <if test="isQuestion != null">
+                isQuestion = #{isQuestion}
+            </if>
+        </set>
+        where taskcid=#{taskcid} and gateway_id=#{gateway_id}
+    </update>
+    <!--//新增任务时新增关联信息-->
+    <insert id="insertTaskcAndNode" parameterType="int">
+        insert into zgm_taskandnode
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="taskcid != null">
+                taskcid,
+            </if>
+            <if test="collarTaskid != null">
+                collarTaskid,
+            </if>
+
+            <if test="collarTaskcStep != null">
+                gateway_id,
+            </if>
+            <if test="collarTaskcCreateTime != null">
+                gatewayStep,
+            </if>
+
+            <if test="isGatewayStep != null">
+                isQuestion,
+            </if>
+
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="taskcid != null">
+                #{taskcid},
+            </if>
+            <if test="userid != null">
+                #{userid},
+            </if>
+
+            <if test="collarTaskcStep != null">
+                #{collarTaskcStep},
+            </if>
+            <if test="collarTaskcCreateTime != null">
+                #{collarTaskcCreateTime},
+            </if>
+
+            <if test="collarTaskcType != null">
+                #{collarTaskcType},
+            </if>
+        </trim>
+
+
+    </insert>
+</mapper>

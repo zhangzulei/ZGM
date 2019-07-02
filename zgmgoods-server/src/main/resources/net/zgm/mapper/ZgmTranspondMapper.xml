@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmTranspondMapper">
+    <insert id="addNewsTranspond">
+     insert  into  zgm_transpond(user_id,news_id,transpondnews_time) values (#{userId},#{newsId},now())
+    </insert>
+    <insert id="addVideoTranspond">
+     insert  into  zgm_transpond(user_id,video_id,transpondvideo_time) values (#{userId},#{videoId},now())
+    </insert>
+    <select id="selectZgmTranspondByUid" resultType="net.zgm.model.ZgmTranspond">
+        select *from zgm_transpond where user_id=#{userId}
+    </select>
+    <select id="selectNewsTranspondById" resultType="net.zgm.model.ZgmTranspond">
+        select *from zgm_transpond where user_id=#{userId} and news_id=#{newsId}
+    </select>
+    <select id="selectVideoTranspondById"
+            resultType="net.zgm.model.ZgmTranspond">
+
+                select *from zgm_transpond where user_id=#{userId} and video_id=#{videoId}
+
+    </select>
+
+</mapper>

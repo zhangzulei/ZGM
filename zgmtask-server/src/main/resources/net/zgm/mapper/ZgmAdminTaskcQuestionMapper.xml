@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmAdminTaskcQuestionMapper">
+    <!--节点题目信息进个人题库-->
+    <insert id="insertAdminTaskcQ" parameterType="list">
+        <foreach collection="list" item="item" separator=";">
+            insert into zgm_admintaskcquestion
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+                <if test="item.userid != null and item.userid != '0'">
+                    userid,
+                </if>
+                <if test="item.collarTaskid != null and item.collarTaskid != '0'">
+                    collarTaskid,
+                </if>
+                <if test="item.gateway_id != null and item.gateway_id != '0'">
+                    gateway_id,
+                </if>
+                <if test="item.questionCode != null and item.questionCode != '0'">
+                    questionCode,
+                </if>
+                <if test="item.questionChoice != null">
+                    questionChoice,
+                </if>
+                <if test="item.isComplete != null">
+                    isComplete,
+                </if>
+            </trim>
+            <trim prefix="values (" suffix=")" suffixOverrides=",">
+                <if test="item.userid != null">
+                    #{item.userid},
+                </if>
+                <if test="item.collarTaskid != null">
+                    #{item.collarTaskid},
+                </if>
+                <if test="item.gateway_id != null">
+                    #{item.gateway_id},
+                </if>
+                <if test="item.questionCode != null">
+                    #{item.questionCode},
+                </if>
+                <if test="item.questionChoice != null">
+                    #{item.questionChoice},
+                </if>
+                <if test="item.isComplete != null">
+                    #{item.isComplete},
+                </if>
+            </trim>
+        </foreach>
+    </insert>
+    <!--查询当前任务 当前节点下保存的题目信息和答题信息-->
+    <select id="selectGawQuest" parameterType="net.zgm.model.TaskAndNode" resultType="net.zgm.model.AdminTaskcQuestion">
+          select questionCode,questionChoice,isComplete from zgm_admintaskcquestion where collarTaskid=#{collarTaskid} and gateway_id=#{gateway_id}
+    </select>
+    <update id="updateAdminTaskcQ" parameterType="list">
+        <foreach collection="list" item="item" separator=";">
+
+                update zgm_admintaskcquestion
+                <set>
+                    <if test="item.questionChoice != null ">
+                        questionChoice= #{item.questionChoice},
+                    </if>
+                    <if test="item.isComplete != null and  item.isComplete != ''">
+                        iscomplete= #{item.isComplete}
+                    </if>
+                </set>
+                where userid = #{item.userid} and collarTaskid=#{item.collarTaskid} and gateway_id=#{item.gateway_id} and questionCode=#{item.questionCode}
+        </foreach>
+    </update>
+
+</mapper>

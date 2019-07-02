@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.zgm.mapper.GuildlogMapper">
+    <insert id="insertLog" parameterType="net.zgm.model.ZgmGuildLog">
+        INSERT INTO `zgm_guild_log`
+            (`date`,
+             `guild_id`,
+             `content`,
+             `user_id`,
+             `isdelete`)
+        VALUES (#{date},
+                #{guildId},
+                #{content},
+                #{userId},
+                0);
+    </insert>
+
+    <delete id="deleteLog" parameterType="integer">
+        UPDATE `zgm_guild_log`
+        SET `isdelete` = '1'
+        WHERE `id` = 'id';
+    </delete>
+
+    <select id="findByGuildId" resultType="net.zgm.model.ZgmGuildLog" parameterType="string">
+        SELECT
+          `id`,
+          `date`,
+          `guild_id`,
+          `content`,
+          `user_id`,
+          `isdelete`
+        FROM `zgm_guild_log` where guild_id = #{guildId}
+    </select>
+
+    <select id="findById" resultType="net.zgm.model.ZgmGuildLog" parameterType="integer">
+        SELECT
+          `id`,
+          `date`,
+          `guild_id`,
+          `content`,
+          `user_id`,
+          `isdelete`
+        FROM `zgm_guild_log` where id = #{id}
+    </select>
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/zgm-friend" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgm-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmadmin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmfriend-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmgoods-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmguild-feigin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmguild-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmlogin-feigin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmlogin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmnews-feigin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmnews-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmtask-feigin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmtask-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmuser-feigin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmuser-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zgmview-feigin" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

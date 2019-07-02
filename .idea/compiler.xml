@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zgmnews-server" />
+        <module name="zgm-server" />
+        <module name="zgmadmin-server" />
+        <module name="zgmuser-feigin" />
+        <module name="zgmuser-server" />
+        <module name="zgmguild-server" />
+        <module name="zgmguild-feigin" />
+        <module name="zgmnews-feigin" />
+        <module name="zgmlogin-feigin" />
+        <module name="zgm-common" />
+        <module name="zgmtask-server" />
+        <module name="zgmlogin-server" />
+        <module name="zgmtask-feigin" />
+        <module name="zgmgoods-server" />
+        <module name="zgmfriend-server" />
+        <module name="zgmview-feigin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zgm-friend" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmMotorcadeMapper">
+
+
+    <update id="updatecoordinate">
+        update zgm_motorcade set  motorcade_lat=#{motorcadeLat} ,  motorcade_lon=#{motorcadeLon}  where  motorcade_id=#{motorcadeId}
+    </update>
+    <select id="selectZgmMotorcade" resultType="net.zgm.model.ZgmMotorcade">
+        select * from zgm_motorcade
+    </select>
+
+</mapper>

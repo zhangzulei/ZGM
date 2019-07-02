@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmGatewayMapper">
+    <!--查询所有领取任务下的所有节点信息-->
+    <select id="selectAllGatewayByTaskid" parameterType="int" resultType="net.zgm.model.ZgmGateway">
+       select * from zgm_gateway g ,zgm_taskandnode t where t.gateway_id=g.gateway_id and t.taskcid=#{value }
+    </select>
+    <!--查询单个节点信息-->
+    <select id="selectZgmGatewayById" parameterType="int" resultType="net.zgm.model.ZgmGateway">
+       select * from zgm_gateway g where gateway_id=#{value}
+    </select>
+    <!--根据省份id查询节点-->
+    <select id="selectZgmGatewayBySid" parameterType="int" resultType="net.zgm.model.ZgmGateway">
+      select * from zgm_gateway g ,zgm_taskandnode t where t.gateway_id=g.gateway_id and t.taskcid=#{taskcid } and gateway_provinceid=#{gatewayProvinceid }
+    </select>
+</mapper>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.zgm.mapper.GuildMemberMapper">
+
+    <insert id="insertMember" parameterType="net.zgm.model.ZgmGuildPeo">
+        INSERT INTO `zgm_guild_peo`
+            (`guild_id`,
+             `user_id`,
+             `create_date`,
+             `isadopt`,
+             `role`)
+        VALUES (#{guildId},
+                #{userId},
+                #{createDate},
+                #{isadopt},
+                #{role});
+    </insert>
+
+    <update id="updateMember" parameterType="net.zgm.model.ZgmGuildPeo">
+        UPDATE `zgm_guild_peo`
+        SET `guild_id` = #{guildId},
+          `user_id` = #{userId},
+          `create_date` = #{createDate},
+          `isadopt` = #{isadopt},
+          `role` = #{role}
+        WHERE `id` = #{id};
+    </update>
+
+    <select id="findAll" resultType="net.zgm.model.ZgmGuildPeo" parameterType="string">
+        SELECT
+          `id`,
+          `guild_id`,
+          `user_id`,
+          `create_date`,
+          `isadopt`,
+          `role`
+        FROM `zgm_guild_peo` where guild_id = #{guildId} and isadopt = 1;
+    </select>
+
+    <select id="findById" resultType="net.zgm.model.ZgmGuildPeo">
+         SELECT
+          `id`,
+          `guild_id`,
+          `user_id`,
+          `create_date`,
+          `isadopt`,
+          `role`
+        FROM `zgm_guild_peo` where user_id = #{id} and guild_id = #{guildId}
+    </select>
+
+    <select id="findInfoById" resultType="map">
+         SELECT
+          peo.`id`,
+          peo.`guild_id`,
+          peo.`user_id`,
+          peo.`create_date`,
+          peo.`isadopt`,
+          peo.`role`,
+          info.`id`,
+          info.`user_id`,
+          info.`user_name`,
+          info.`user_sex`,
+          info.`user_age`,
+          info.`user_school`,
+          info.`user_grade`,
+          info.`user_class`,
+          info.`user_provinces`,
+          info.`user_cities`,
+          info.`user_areas`,
+          info.`user_address`,
+          info.`isdelete`,
+          info.`create_date`,
+          info.`isstudent`
+        FROM `zgm_guild_peo` peo
+        INNER JOIN zgm_userrela  info
+        ON peo.`user_id` = info.`user_id`
+        WHERE peo.user_id = #{id} AND peo.guild_id = #{guildId}
+    </select>
+
+    <select id="findByUserId" resultType="net.zgm.model.ZgmGuild">
+        SELECT
+          `id`,
+          `guild_id`,
+          `user_id`,
+          `create_date`,
+          `isadopt`,
+          `role`
+        FROM `zgm_guild_peo` where user_id = #{userId} and isadopt = 1;
+    </select>
+
+    <select id="findByState" resultType="net.zgm.model.ZgmGuildPeo" parameterType="integer">
+        SELECT `id`,
+          `guild_id`,
+          `user_id`,
+          `create_date`,
+          `isadopt`,
+          `role`
+          FROM `zgm_guild_peo`
+          WHERE isadopt = #{state}
+    </select>
+
+    <select id="findByStateAndGuild" resultType="net.zgm.model.ZgmGuildPeo">
+        SELECT `id`,
+          `guild_id`,
+          `user_id`,
+          `create_date`,
+          `isadopt`,
+          `role`
+          FROM `zgm_guild_peo`
+          WHERE guild_id = #{guildId} and isadopt = #{state}
+    </select>
+
+    <select id="likeFindPeo" resultType="net.zgm.model.ZgmGuild">
+          SELECT  peo.`id`,
+                  peo.`guild_id`,
+                  peo.`user_id`,
+                  peo.`create_date`,
+                  peo.`isadopt`,
+                  peo.`role`,
+                  peo.`user_id`,
+                  admin.`user_name`,
+                  admin.`wx_pic`,
+                  admin.`sex`
+          FROM `zgm_guild_peo` peo
+          INNER JOIN zgm_admin admin ON peo.`user_id` = admin.`user_id`
+          WHERE admin.`user_name` LIKE CONCAT('%',#{userName},'%') AND peo.guild_id = #{guildId}
+    </select>
+
+</mapper>

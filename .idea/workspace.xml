@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b386031d-80db-4c29-91d0-f3ace05a5969" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmCollarTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmCollarTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmadmin-server/src/main/java/net/zgm/controller/ZgmAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmadmin-server/src/main/java/net/zgm/controller/ZgmAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmadmin-server/src/main/java/net/zgm/service/impl/ZgmAdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmadmin-server/src/main/java/net/zgm/service/impl/ZgmAdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmadmin-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zgmadmin-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmadmin-server/src/main/resources/net/zgm/mapper/ZgmAdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zgmadmin-server/src/main/resources/net/zgm/mapper/ZgmAdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zgmgoods-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ResultMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmAddress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmArea.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmClickzan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmGoods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmGoodsclassify.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmIntegral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmMotorcade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmMsg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmNews.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmProvince.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmQuestion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmTranspond.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/java/net/zgm/model/ZgmVideo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmgoods-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zgmgoods-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zgmlogin-feigin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ResultMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmAddress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmArea.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmClickzan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmGoods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmGoodsclassify.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmIntegral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmMotorcade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmMsg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmNews.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmProvince.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmQuestion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmTranspond.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/model/ZgmVideo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zgmlogin-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/controller/ZgmLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/controller/ZgmLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ResultMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmAddress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmArea.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmClickzan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmGoods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmGoodsclassify.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmIntegral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmMotorcade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmMsg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmNews.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmProvince.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmQuestion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmTranspond.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/model/ZgmVideo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zgmlogin-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmlogin-server/src/main/resources/net/zgm/mapper/ZgmAdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zgmlogin-server/src/main/resources/net/zgm/mapper/ZgmAdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmnews-server/src/main/java/net/zgm/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmnews-server/src/main/java/net/zgm/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmCollarTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmCollarTaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmGatewayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmGatewayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/service/ZgmGatewayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/service/ZgmGatewayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmAdminTaskcQController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmAdminTaskcQController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmGatewayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmGatewayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/mapper/ZgmGatewayMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/mapper/ZgmGatewayMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/ZgmGatewayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/ZgmGatewayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmAdminTaskcQserviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmAdminTaskcQserviceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmCollarTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmCollarTaskServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmGatewayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmGatewayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmAdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmAdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmAdminTaskcQuestionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmAdminTaskcQuestionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmCollarTaskcMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmCollarTaskcMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmGatewayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmGatewayMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmTaskcAndNodeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmTaskcAndNodeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmview-feigin/src/main/java/net/zgm/controller/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zgmview-feigin/src/main/java/net/zgm/controller/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmview-feigin/src/main/java/net/zgm/controller/ZgmCollarTaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgmview-feigin/src/main/java/net/zgm/controller/ZgmTaskcController.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/zgm-server/target/" />
+    <ignored path="$PROJECT_DIR$/zgmview-feigin/target/" />
+    <ignored path="$PROJECT_DIR$/zgm-common/target/" />
+    <ignored path="$PROJECT_DIR$/zgmuser-server/target/" />
+    <ignored path="$PROJECT_DIR$/zgmtask-feigin/target/" />
+    <ignored path="$PROJECT_DIR$/zgmguild-server/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/zgmlogin-server/target/" />
+    <ignored path="$PROJECT_DIR$/zgmtask-server/target/" />
+    <ignored path="$PROJECT_DIR$/zgmadmin-server/target/" />
+    <ignored path="$PROJECT_DIR$/zgmguild-feigin/target/" />
+    <ignored path="$PROJECT_DIR$/zgmuser-feigin/target/" />
+    <ignored path="$PROJECT_DIR$/zgmgoods-server/target/" />
+    <ignored path="$PROJECT_DIR$/zgmlogin-feigin/target/" />
+    <ignored path="$PROJECT_DIR$/zgmnews-feigin/target/" />
+    <ignored path="$PROJECT_DIR$/zgmnews-server/target/" />
+    <ignored path="$PROJECT_DIR$/zgm-friend/target/" />
+    <ignored path="$PROJECT_DIR$/zgmfriend-server/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmAdminTaskcQController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmAdminTaskcQController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmTaskcMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>selectStateCollarTask</find>
+      <find>updateCollarTaskcState</find>
+      <find>ver</find>
+      <find>verification</find>
+      <find>selectZgmAdminByPhone</find>
+      <find>updateStepTime</find>
+      <find>selectZgmGatewayBySid</find>
+      <find>zgm_taskandnode</find>
+      <find>selectZgmAdminByUidapi</find>
+      <find>selectZgmAdminByUid</find>
+      <find>wxlandapi</find>
+      <find>bandWX</find>
+      <find>clickzanNewsUpdateIntergral</find>
+      <find>wxland</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmAdminTaskcQController.java" />
+        <option value="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmQuestionController.java" />
+        <option value="$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmTaskc.java" />
+        <option value="$PROJECT_DIR$/zgmtask-feigin/pom.xml" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/ZgmtaskFeiginApplication.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/mapper/ZgmTaskcMapper.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmTaskcMapper.xml" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/ZgmTaskcService.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmTaskcServiceImpl.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmTaskcController.java" />
+        <option value="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/service/ZgmTaskcservice.java" />
+        <option value="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmTaskcController.java" />
+        <option value="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/service/ZgmCollarTaskService.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/mapper/ZgmCollarTaskMapper.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/pom.xml" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/ZgmCollarTaskService.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmCollarTaskController.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/mapper/ZgmAdminMapper.java" />
+        <option value="$PROJECT_DIR$/zgmlogin-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/zgmlogin-feigin/src/main/java/net/zgm/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/zgmlogin-server/pom.xml" />
+        <option value="$PROJECT_DIR$/zgmgoods-server/pom.xml" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmTaskcAndNodeMapper.xml" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmGatewayMapper.xml" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/mapper/ZgmGatewayMapper.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/ZgmGatewayService.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmGatewayServiceImpl.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmGatewayController.java" />
+        <option value="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/service/ZgmGatewayService.java" />
+        <option value="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmGatewayController.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmCollarTaskcMapper.xml" />
+        <option value="$PROJECT_DIR$/zgmview-feigin/src/main/java/net/zgm/controller/ViewController.java" />
+        <option value="$PROJECT_DIR$/zgmadmin-server/src/main/java/net/zgm/mapper/ZgmAdminMapper.java" />
+        <option value="$PROJECT_DIR$/zgmadmin-server/src/main/java/net/zgm/service/impl/ZgmAdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/zgmadmin-server/src/main/java/net/zgm/controller/ZgmAdminController.java" />
+        <option value="$PROJECT_DIR$/zgmadmin-server/src/main/resources/net/zgm/mapper/ZgmAdminMapper.xml" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmAdminMapper.xml" />
+        <option value="$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmCollarTaskController.java" />
+        <option value="$PROJECT_DIR$/zgmlogin-feigin/pom.xml" />
+        <option value="$PROJECT_DIR$/zgmlogin-server/src/main/resources/net/zgm/mapper/ZgmAdminMapper.xml" />
+        <option value="$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmAdmin.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmAdminTaskcQuestionMapper.xml" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmAdminTaskcQController.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmAdminTaskcQserviceImpl.java" />
+        <option value="$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmCollarTask.java" />
+        <option value="$PROJECT_DIR$/zgmnews-server/src/main/java/net/zgm/service/impl/ArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/zgmadmin-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/zgmgoods-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/controller/ZgmLoginController.java" />
+        <option value="$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmCollarTaskServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven_Repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.0-bin/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.6.0-bin\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ZGM" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ZGM" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="274" />
+    <option name="y" value="52" />
+    <option name="width" value="960" />
+    <option name="height" value="520" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-feigin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-feigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-feigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-feigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-feigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zgm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-feigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zgm" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-feigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zgm" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-feigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zgm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zgm" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zgm" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZGM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZGM" type="462c0819:PsiDirectoryNode" />
+              <item name="zgmtask-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xigua" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Program Files\gitdemo\ZGM\zgmfriend-server\src\main\resources\net\zgm\mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.zgm.service" />
+      <recent name="net.zgm.controller" />
+      <recent name="net.zgm.mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Program Files\gitdemo\ZGM\zgm-common\src\main\java\net\zgm\model" />
+      <recent name="D:\Program Files\gitdemo\ZGM\zgmfriend-server\src\main\resources" />
+      <recent name="D:\Program Files\gitdemo\ZGM\zgmtask-server\src\main\resources\net\zgm\mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ZgmnewsFeiginApplication">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgm-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmadminServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmadmin-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmadminServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmfriendServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="zgmfriend-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.zgm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmfriendServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmgoodsServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmgoods-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmgoodsServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmguildFeiginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmguild-feigin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmguildFeiginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmguildServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmguild-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmguildServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmloginFeiginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmlogin-feigin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmloginFeiginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmloginServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmlogin-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmloginServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmnewsFeiginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmnews-feigin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmnewsFeiginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmnewsServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmnews-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmnewsServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmtaskFeiginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmtask-feigin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmtaskFeiginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmtaskServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmtask-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmtaskServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmuserFeiginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmuser-feigin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmuserFeiginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmuserServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmuser-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmuserServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZgmviewFeiginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zgmview-feigin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.zgm.ZgmviewFeiginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ZgmServerApplication" />
+      <item itemvalue="Spring Boot.ZgmviewFeiginApplication" />
+      <item itemvalue="Spring Boot.ZgmuserServerApplication" />
+      <item itemvalue="Spring Boot.ZgmtaskFeiginApplication" />
+      <item itemvalue="Spring Boot.ZgmguildServerApplication" />
+      <item itemvalue="Spring Boot.ZgmloginServerApplication" />
+      <item itemvalue="Spring Boot.ZgmtaskServerApplication" />
+      <item itemvalue="Spring Boot.ZgmadminServerApplication" />
+      <item itemvalue="Spring Boot.ZgmguildFeiginApplication" />
+      <item itemvalue="Spring Boot.ZgmuserFeiginApplication" />
+      <item itemvalue="Spring Boot.ZgmgoodsServerApplication" />
+      <item itemvalue="Spring Boot.ZgmloginFeiginApplication" />
+      <item itemvalue="Spring Boot.ZgmnewsServerApplication" />
+      <item itemvalue="Spring Boot.ZgmnewsFeiginApplication" />
+      <item itemvalue="Spring Boot.ZgmfriendServerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ZgmfriendServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b386031d-80db-4c29-91d0-f3ace05a5969" name="Default" comment="" />
+      <created>1560244463370</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560244463370</updated>
+      <workItem from="1560244465062" duration="55945000" />
+      <workItem from="1560478817224" duration="18822000" />
+      <workItem from="1560742871775" duration="15759000" />
+      <workItem from="1560822635867" duration="61939000" />
+      <workItem from="1561187606514" duration="5881000" />
+      <workItem from="1561442582973" duration="13197000" />
+      <workItem from="1561519758623" duration="195000" />
+      <workItem from="1561520083059" duration="4113000" />
+      <workItem from="1561530755288" duration="6000" />
+      <workItem from="1561531699039" duration="66000" />
+      <workItem from="1561597659075" duration="21659000" />
+      <workItem from="1561712486042" duration="1796000" />
+      <workItem from="1561772396855" duration="37000000" />
+      <workItem from="1561965151126" duration="6494000" />
+      <workItem from="1562029395485" duration="368000" />
+    </task>
+    <task id="LOCAL-00001" summary="cd 6.14">
+      <created>1560476034225</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560476034225</updated>
+    </task>
+    <task id="LOCAL-00002" summary="cd 6.14">
+      <created>1560495388708</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560495388708</updated>
+    </task>
+    <task id="LOCAL-00003" summary="cd 6.19">
+      <created>1560943441045</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560943441045</updated>
+    </task>
+    <task id="LOCAL-00004" summary="cd 6.19">
+      <created>1560998190920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560998190920</updated>
+    </task>
+    <task id="LOCAL-00005" summary="cd 6.19">
+      <created>1561514002325</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1561514002325</updated>
+    </task>
+    <task id="LOCAL-00006" summary="cd 6.26">
+      <created>1561528733821</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561528733822</updated>
+    </task>
+    <task id="LOCAL-00007" summary="cd 6.27">
+      <created>1561617263219</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561617263219</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="243240000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28441754" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.30923077" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3289256" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.5276923" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289256" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3276923" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49924356" weight="0.32561985" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.32980332" />
+      <window_info anchor="right" id="BPMNPalette" order="11" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cd 6.14" />
+    <MESSAGE value="cd 6.19" />
+    <MESSAGE value="cd 6.26" />
+    <MESSAGE value="cd 6.27" />
+    <option name="LAST_COMMIT_MESSAGE" value="cd 6.27" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/ZgmAdminTaskcQService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmCollarTaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-286">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/ZgmQuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/ZgmGatewayService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmGatewayServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/mapper/ZgmAdminTaskcQuestionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/mapper/ZgmGatewayMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-282">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmGatewayMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="5" column="104" lean-forward="true" selection-start-line="5" selection-start-column="104" selection-end-line="5" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmGatewayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="55" column="49" lean-forward="true" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmQuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmQuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmCollarTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="56" column="15" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmnews-server/src/main/java/net/zgm/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="64" column="61" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmnews-server/src/main/java/net/zgm/service/impl/ArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1060">
+          <caret line="448" column="14" lean-forward="true" selection-start-line="448" selection-start-column="14" selection-end-line="448" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmadmin-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmadmin-server/src/main/java/net/zgm/ZgmadminServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmgoods-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmview-feigin/src/main/java/net/zgm/controller/ZgmCollarTaskController.java" />
+    <entry file="file://$PROJECT_DIR$/zgmview-feigin/src/main/java/net/zgm/controller/ZgmTaskcController.java" />
+    <entry file="file://$PROJECT_DIR$/zgmview-feigin/src/main/java/net/zgm/controller/ViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="55" column="68" lean-forward="true" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/TaskAndNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmCommentFabulous.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmCommentReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmFollowWrite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmMotorcade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmNews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgm-common/src/main/java/net/zgm/model/ZgmAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmadmin-server/src/main/java/net/zgm/controller/ZgmAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2552">
+          <caret line="123" column="57" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/controller/ZgmLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmQuestionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmQuestionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="40" column="86" selection-start-line="40" selection-start-column="86" selection-end-line="40" selection-end-column="86" />
+          <folding>
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#2201#2202#0" expanded="true" />
+            <element signature="e#2266#2267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmAdminTaskcQuestionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmAdminTaskcQserviceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmlogin-server/src/main/java/net/zgm/service/impl/ZgmLoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmCollarTaskcMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2337">
+          <caret line="123" column="31" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmlogin-server/src/main/resources/net/zgm/mapper/ZgmAdminMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmAdminMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/service/impl/ZgmCollarTaskServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/mapper/ZgmTaskcMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/mapper/ZgmTaskcAndNodeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/ZgmtaskFeiginApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/service/ZgmTaskcservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/Swagger2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/ZgmtaskServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/mapper/ZgmQuestionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-feigin/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmTaskcController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-980">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/java/net/zgm/controller/ZgmAdminTaskcQController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-feigin/src/main/java/net/zgm/controller/ZgmAdminTaskcQController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zgmtask-server/src/main/resources/net/zgm/mapper/ZgmTaskcMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>zgm-common</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

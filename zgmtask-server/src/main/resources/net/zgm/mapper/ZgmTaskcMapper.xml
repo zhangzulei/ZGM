@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmTaskcMapper">
+    <!--查询当前类型的所有的强制任务-->
+    <select id="findForceTaskc" parameterType="int" resultType="net.zgm.model.ZgmCollarTask">
+      select * from zgm_taskc where taskcType=#{value} and taskcForce='1' and taskcEndTime <![CDATA[ > now()]]>
+    </select>
+    <!--每次点击最新10条任务-->
+    <select id="selectNewTaskc" resultType="net.zgm.model.ZgmCollarTask">
+      select * from zgm_taskc t where taskcEndTime <![CDATA[ > now()]]>  GROUP BY t.taskcCreateTime desc,t.taskcid desc limit 0,10
+    </select>
+    <select id="selectAllTaskc" resultType="net.zgm.model.ZgmCollarTask">
+      select * from zgm_taskc
+    </select>
+    <!--查询最热10条-->
+    <select id="selectHotTaskc" resultType="net.zgm.model.ZgmCollarTask" parameterType="list">
+        select * from zgm_taskc where taskcEndTime <![CDATA[ > now()]]> and  taskcid in
+        <foreach item="item" index="index" collection="list" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+
+    </select>
+    <!--查询单个任务详情-->
+    <select id="selectTaskcByTaskcid" parameterType="int" resultType="net.zgm.model.ZgmCollarTask">
+        select * from zgm_taskc where taskcid=#{ value } and taskcEndTime <![CDATA[ >  now()]]>
+    </select>
+    <!--查询所有过期任务-->
+    <select id="selectTaskcByEnd" parameterType="int" resultType="net.zgm.model.ZgmCollarTask">
+        select * from zgm_taskc where taskcEndTime <![CDATA[ <  now()]]>
+    </select>
+    <!--查询所未过期 未进行中待领取任务-->
+    <select id="selectTaskcByHave" parameterType="int" resultType="net.zgm.model.ZgmTaskc">
+        select * from zgm_taskc where  taskcEndTime <![CDATA[ >  now()]]> and taskcid not in
+        <foreach item="item" index="index" collection="list" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+    <select id="selectTaskcSumStep" parameterType="int" resultType="int">
+      select taskcSumStep from zgm_taskc where taskcid=#{value }
+    </select>
+    <select id="selectTaskcDetails" parameterType="int" resultType="net.zgm.model.ZgmTaskc">
+      select taskcDetails from zgm_taskc where taskcid = #{value }
+    </select>
+
+    <!--更新热门任务-->
+    <!--<update id="updateHotTaskc" parameterType="list">-->
+    <!--update zgm_taskc set taskcHot='1' where taskcid in-->
+    <!--<foreach separator="," index="index" item="item" collection="list" close=")" open="(">-->
+    <!--#{item}-->
+    <!--</foreach>-->
+    <!--</update>-->
+
+
+</mapper>

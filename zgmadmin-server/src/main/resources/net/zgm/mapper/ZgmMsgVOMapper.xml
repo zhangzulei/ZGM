@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmMsgVOMapper">
+
+    <select id="queryAll" resultType="net.zgm.model.ZgmMsgVO">
+
+        select
+       a.integral,a.answercreateTime
+        from ( (select * from zgm_answer where user_id=#{userId}) a,
+        (select * from zgm_clickzan where user_id=#{userId}) b,
+        (select *from zgm_order where  user_id=#{userId}) c,
+        (select *from zgm_transpond where user_id=#{userId}) d)
+
+    </select>
+</mapper>

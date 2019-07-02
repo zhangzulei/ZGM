@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmGatewayMapper">
+    <select id="selectZgmGatewayById" resultType="net.zgm.model.ZgmGateway">
+	select * from zgm_gateway where gateway_id = #{gatewayId}
+    </select>
+    <select id="selectZgmGoodsByGId" resultType="net.zgm.model.ZgmGoods">
+     select *from zgm_goods where gateway_id = #{gatewayId}
+	</select>
+    <select id="queryAllZgmGateway" resultType="net.zgm.model.ZgmGateway">
+        select gateway_id,gateway_name,gateway_coordinate,flag,gateway_sequence , gateway_pic  from zgm_gateway
+    </select>
+    <select id="selectZgmGatewayByPid" resultType="net.zgm.model.ZgmGateway">
+        select * from zgm_gateway where gateway_provinceid =#{provinceId}
+    </select>
+</mapper>

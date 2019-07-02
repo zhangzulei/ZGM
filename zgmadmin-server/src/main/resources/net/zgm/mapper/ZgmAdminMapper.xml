@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmAdminMapper">
+    <insert id="addZgmAdmin">
+		INSERT  INTO  zgm_admin(user_name,wx_open_id,wx_pic,createtime,integral,telephone)
+		values (#{userName},#{wxOpenId},#{wxPic},now(),0,#{telephone})
+	</insert>
+    <insert id="addZgmAdminBytelephone">
+        INSERT  INTO  zgm_admin(user_name,createtime,integral,telephone,wx_pic)
+		values (#{telephone},now(),0,#{telephone},"http://zgmproject.oss-cn-beijing.aliyuncs.com")
+
+    </insert>
+    <update id="updateZgmAdmin">
+        update zgm_admin set  telephone=#{telephone} where wx_open_id=#{wxOpenId}
+    </update>
+    <update id="updateIntergral">
+                update zgm_admin set  integral=integral+ #{userIntegral} where user_id=#{userId}
+    </update>
+    <update id="updateTelephone">
+        update zgm_admin set   telephone=#{telephone} ,user_name=#{telephone} where  user_id=#{userId}
+    </update>
+    <update id="updateTelephoneByWx">
+        update zgm_admin set   telephone=#{telephone}  where  user_id=#{userId}
+    </update>
+    <update id="bandWX">
+
+         update zgm_admin set user_name=#{userName},wx_open_id=#{wxOpenId},wx_pic=#{wxPic}   where telephone=#{telephone}
+
+    </update>
+    <select id="selectZgmAdminByPhone" resultType="net.zgm.model.ZgmAdmin">
+		SELECT * FROM zgm_admin WHERE telephone=#{telephone}
+	</select>
+    <select id="selectZgmAdminByWX" resultType="net.zgm.model.ZgmAdmin">
+		SELECT * FROM zgm_admin WHERE wx_open_id=#{WX}
+	</select>
+    <select id="selectZgmAdminByUid" resultType="net.zgm.model.ZgmAdmin" parameterType="int">
+        		SELECT * FROM zgm_admin WHERE user_id=#{value }
+    </select>
+
+</mapper>

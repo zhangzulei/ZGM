@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zgm.mapper.ZgmNewsMapper">
+    <update id="updateNewsclickzanNum">
+        update zgm_news set clickzan_num=(clickzan_num + ${clicknum})   where newsId=#{newsId}
+    </update>
+    <select id="selectZgmNewsByGId" resultType="net.zgm.model.ZgmNews">
+      select * from zgm_news where gateway_id =#{gatewayId}
+    </select>
+    <select id="selectZgmNewsByNid" resultType="net.zgm.model.ZgmNews">
+        select * from zgm_news where newsId=#{newsId}
+    </select>
+
+</mapper>

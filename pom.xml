@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.zgm</groupId>
+    <artifactId>ZGM</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>zgm-common</module>
+        <module>zgm-server</module>
+        <module>zgmadmin-server</module>
+        <module>zgmgoods-server</module>
+        <module>zgmlogin-feigin</module>
+        <module>zgmlogin-server</module>
+        <module>zgmtask-server</module>
+        <module>zgmtask-feigin</module>
+        <module>zgmview-feigin</module>
+        <module>zgmguild-feigin</module>
+        <module>zgmguild-server</module>
+        <module>zgmuser-feigin</module>
+        <module>zgmuser-server</module>
+        <module>zgmnews-feigin</module>
+        <module>zgmnews-server</module>
+        <module>zgmfriend-server</module>
+    </modules>
+
+
+</project>
